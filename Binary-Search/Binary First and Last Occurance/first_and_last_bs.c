@@ -71,6 +71,6 @@ int main()
     }
     else
     {
-        printf("Element not found");
+        printf("Element not found!!");
     }
 }
