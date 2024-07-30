@@ -21,6 +21,7 @@ int findMinDiff(int *arr, int size, int key) {
         } else if (arr[mid] < key) {
             low = mid + 1;
         } else {
+            
             high = mid - 1;
         }
     }
