@@ -1,0 +1,65 @@
+1. Bubble Sort:
+
+    Concept: Repeatedly swaps adjacent elements if they are in the wrong order.
+    Complexity: O(n²)
+    Use Cases: Simple cases, educational purposes.
+
+2. Selection Sort:
+
+    Concept: Repeatedly selects the minimum element from the unsorted part and swaps it with the first unsorted element.
+    Complexity: O(n²)
+    Use Cases: When memory writes are a concern.
+
+3. Insertion Sort:
+
+    Concept: Builds the final sorted array one item at a time, inserting elements into their correct position.
+    Complexity: O(n²) but O(n) in the best case (nearly sorted arrays).
+    Use Cases: Small datasets, nearly sorted data.
+
+4. Merge Sort:
+
+    Concept: Divides the array into halves, recursively sorts them, and then merges the sorted halves.
+    Complexity: O(n log n)
+    Use Cases: Stable sort, large datasets, linked lists.
+
+5. Quick Sort:
+
+    Concept: Picks a pivot element, partitions the array around the pivot, and recursively sorts the partitions.
+    Complexity: O(n log n) on average, but O(n²) in the worst case (can be optimized).
+    Use Cases: General-purpose sorting, in-place sort, fast for average cases.
+
+6. Heap Sort:
+
+    Concept: Builds a max heap and repeatedly extracts the maximum element from the heap.
+    Complexity: O(n log n)
+    Use Cases: In-place sort, when a stable sort is not required.
+
+7. Counting Sort:
+
+    Concept: Counts occurrences of each element and uses this information to place elements in sorted order.
+    Complexity: O(n + k) where k is the range of input.
+    Use Cases: Sorting integers within a small range, stable and linear time.
+
+8. Radix Sort:
+
+    Concept: Sorts numbers digit by digit starting from the least significant digit using a stable sorting algorithm (e.g., Counting Sort).
+    Complexity: O(nk), where k is the number of digits.
+    Use Cases: Large numbers, non-comparative sort.
+
+9. Bucket Sort:
+
+    Concept: Distributes elements into buckets, sorts each bucket individually, and then concatenates them.
+    Complexity: O(n + k), where k is the number of buckets.
+    Use Cases: Uniformly distributed data, real numbers.
+
+10. Shell Sort:
+
+    Concept: An extension of Insertion Sort that allows the exchange of far-apart elements.
+    Complexity: O(n log n) depending on the gap sequence.
+    Use Cases: Medium-sized datasets, general-purpose, adaptive.
+
+Additional Tips:
+
+    Understand Space Complexity: In-place algorithms are often preferred in interviews.
+    Know Stability: Some algorithms like Merge Sort and Insertion Sort are stable, which can be important in some applications.
+    Practice: Implement these algorithms and solve problems using them to build familiarity and intuition.
