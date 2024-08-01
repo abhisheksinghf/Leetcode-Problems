@@ -1,6 +1,8 @@
+// Finding max element in bitonic array
+
 #include <stdio.h>
 
-int findPeakElement(int arr[], int n) {
+int findMaxElement(int arr[], int n) {
     int low = 0;
     int high = n - 1;
 
@@ -9,7 +11,7 @@ int findPeakElement(int arr[], int n) {
 
         // Check if mid is not at the edges
         if (mid > 0 && mid < n - 1) {
-            // Check if mid is a peak element
+            // Check if mid is a Max element
             if (arr[mid] >= arr[mid - 1] && arr[mid] >= arr[mid + 1]) {
                 return mid;
             }
@@ -40,18 +42,18 @@ int findPeakElement(int arr[], int n) {
         }
     }
 
-    return -1; // No peak element found (shouldn't happen if array has at least one element)
+    return -1; // No Max element found (shouldn't happen if array has at least one element)
 }
 
 int main() {
-    int arr[] = {1, 3, 3, 4, 11, 0};
+    int arr[] = {10, 12, 14, 17, 6, 3, 1};
     int n = sizeof(arr) / sizeof(arr[0]);
 
-    int peakIndex = findPeakElement(arr, n);
-    if (peakIndex != -1) {
-        printf("Peak element is at index %d with value %d\n", peakIndex, arr[peakIndex]);
+    int MaxIndex = findMaxElement(arr, n);
+    if (MaxIndex != -1) {
+        printf("Max element is at index %d with value %d\n", MaxIndex, arr[MaxIndex]);
     } else {
-        printf("No peak element found.\n");
+        printf("No Max element found.\n");
     }
 
     return 0;
