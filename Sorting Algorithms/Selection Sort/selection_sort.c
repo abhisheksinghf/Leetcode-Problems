@@ -11,10 +11,10 @@ void display(int arr[], int size)
 void selectionSort(int *arr, int size)
 {
     int i, j;
-    for (i = 0; i < size - 1; i++)
+    for (i = 0; i < size - 2; i++)
     {
         int min = i;
-        for (j = i + 1; j < size; j++)
+        for (j = i + 1; j < size - 1; j++)
         {
             if (arr[j] < arr[min])
             {
