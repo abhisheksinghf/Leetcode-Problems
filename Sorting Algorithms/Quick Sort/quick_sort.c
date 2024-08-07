@@ -14,7 +14,7 @@ int partition(int *arr, int low, int high)
     int i = low+1;
     int j = high;
     
-    while(i <= j)
+    while(i < j)
     {
         while(arr[i] <= pivot && i <= high)
         {
@@ -41,7 +41,7 @@ int partition(int *arr, int low, int high)
 
 void quick_sort(int *arr, int low, int high)
 {
-    int mid, index;
+    int index;
     if (low < high)
     {
         index = partition(arr,low,high);
